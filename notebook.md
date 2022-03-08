@@ -79,3 +79,11 @@ modules interact and render view in the browser.
 
 
 ng serve goes to the main.ts file, bootstrap the app module, which bootstrap app componente.
+
+
+
+## Video 4
+Template		Class		Metadata
+View			Code		Information
+HTML			TypeScript	Decorator
+			Data&Methods
