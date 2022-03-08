@@ -20,3 +20,17 @@ Version 1.2.3
 Versions are backwards compatible.
 
 What we learn will not be wasted.
+
+## Video 2
+This is a crash course for complete beginners.
+It covers all the main concepts in Angular.
+
+Pre-requesites:
+Basics of HTML, CSS and JS.
+Basics of Typescript.
+
+Environment:
+Node
+Npm
+Angular CLI
+VS Code
