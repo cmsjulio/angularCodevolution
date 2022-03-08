@@ -77,9 +77,5 @@ comp - html and class
 services - business logic.
 modules interact and render view in the browser.
 
-### Structure
-package.json -> packages that are stroes, scripts, etc.
-main.ts -> entry point
-app folder -> contains root module/component.
 
 ng serve goes to the main.ts file, bootstrap the app module, which bootstrap app componente.
