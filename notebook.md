@@ -34,3 +34,52 @@ Node
 Npm
 Angular CLI
 VS Code
+
+## Video 3 - Architecture
+Modules:
+
+Angular App
+Module <-> Module
+
+Import/Export
+User<->Admin
+
+Every mode represents a feature area of the application (User module, Admin module).
+
+Every ang app has at least one module: root module: AppModule.
+
+Component - controls the portion of the view of the browser (nav, sidebar, main content -- and one root component: app component).
+
+Each comp has a class and a html template.
+
+Module also has a service: business logic of the app.
+
+Ang app - one or more modules.
+mod - one or more components and services.
+comp - html and class
+services - business logic.
+modules interact and render view in the browser.
+
+### Structure
+package.json -> packages that are stroes, scripts, etc.
+main.ts -> entry point
+app folder -> contains root module/component.
+
+ng serve goes to the main.ts file, bootstrap the app module, which bootstrap app componente
+
+Each comp has a class and a html template.
+
+Module also has a service: business logic of the app.
+
+Ang app - one or more modules.
+mod - one or more components and services.
+comp - html and class
+services - business logic.
+modules interact and render view in the browser.
+
+### Structure
+package.json -> packages that are stroes, scripts, etc.
+main.ts -> entry point
+app folder -> contains root module/component.
+
+ng serve goes to the main.ts file, bootstrap the app module, which bootstrap app componente.
