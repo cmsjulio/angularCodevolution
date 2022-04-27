@@ -7,6 +7,8 @@ import { TestComponent } from './test/test.component';
 import { Test2Component } from './test2/test2.component';
 import { Test3Component } from './test3/test3.component';
 import { TemplateReferenceVariablesComponent } from './template-reference-variables/template-reference-variables.component';
+import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { TemplateReferenceVariablesComponent } from './template-reference-variab
     TestComponent,
     Test2Component,
     Test3Component,
-    TemplateReferenceVariablesComponent
+    TemplateReferenceVariablesComponent,
+    TwoWayBindingComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
