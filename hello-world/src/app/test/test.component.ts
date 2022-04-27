@@ -45,6 +45,10 @@ import { Component, OnInit } from '@angular/core';
     {{helloUser()}}
   </h2>
 
+  <h2>
+    {{siteUrl}}
+  </h2>
+
   <input [id]="myId" type="text" value="Vishwas">
   <input [disabled]="isDisabled" id={{myId}} type="text" value="Vishwas">
   <input bind-disabled="isDisabled2" id={{myId2}} type="text" value="Rahs">
@@ -73,6 +77,8 @@ export class TestComponent implements OnInit {
   public isDisabled = false; // we will bind disabled to this property;
 
   public isDisabled2 = true; // bindado de outra forma, com bind-disabled
+
+  public siteUrl = window.location.href;
 
   constructor() { }
 
