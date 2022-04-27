@@ -10,6 +10,7 @@ import { TemplateReferenceVariablesComponent } from './template-reference-variab
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 import { FormsModule } from '@angular/forms';
 import { NgIfDirectiveComponent } from './ng-if-directive/ng-if-directive.component';
+import { NgSwitchDirectiveComponent } from './ng-switch-directive/ng-switch-directive.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { NgIfDirectiveComponent } from './ng-if-directive/ng-if-directive.compon
     Test3Component,
     TemplateReferenceVariablesComponent,
     TwoWayBindingComponent,
-    NgIfDirectiveComponent
+    NgIfDirectiveComponent,
+    NgSwitchDirectiveComponent
   ],
   imports: [
     BrowserModule,
