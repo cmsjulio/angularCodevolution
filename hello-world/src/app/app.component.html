@@ -37,7 +37,7 @@
   <app-ng-for-directive></app-ng-for-directive>
 </div> -->
 
-<div>
+<!-- <div>
   <app-component-interaction 
   (childEvent)="message=$event"
   [parentData]="name"> 
@@ -47,7 +47,24 @@
     Para enviar de filho pro pai, precisamos utilizar o EventEmitter e o @Output.
     Aqui, recebemos o conteúdo do método com o $event, e atribuimos à variável ts message.
   </app-component-interaction>
-  
-  <h4>{{message}}</h4>
+    <h4>{{message}}</h4>
+</div> -->
 
+<div>
+  <app-pipes>
+    Pipes permitem que transformemos dados antes de exibi-los em tela -- sem alterá-los na classe.
+    O pipe lowercase converte tudo para lower case.
+    De maneira similar, há também o pipe uppercase.
+    O titlecase converte as letras iniciais de cada palavra para uppercase.
+    O pipe slice:N:M, exibe a string a partir da posição N até a posição anterior a M.
+    O pipe json converte o objeto para formato JSON.
+    O pipe number: 'N.M-O' formata a saída do número: 
+      N=quantidade mínima de dígitos inteiros,
+      M=quantidade mínima de dígitos decimais,
+      O=quantidade máxima de dígitos decimais;
+    O pipe percent converte a saída para formato percentual.
+    O pipe currency:'XX' converte para valor em moeda, o padrão é dólar $, pra converter em outra moeda, passa-se um parâmetro.
+    O pipe date aceita várias formatações, 'short', 'shortDate', 'shortTime', 'medium' etc.
+
+  </app-pipes>
 </div>
