@@ -33,6 +33,21 @@
   <app-ng-switch-directive></app-ng-switch-directive>
 </div> -->
 
-<div>
+<!-- <div>
   <app-ng-for-directive></app-ng-for-directive>
+</div> -->
+
+<div>
+  <app-component-interaction 
+  (childEvent)="message=$event"
+  [parentData]="name"> 
+    Passando um atributo via componente pai para o filho. 
+    O atributo no ts do componente pai chama-se name, mas aqui o binding é feito com nome de parentData.
+    No child component, utilizamos o @Input para receber a variável, que nomeamos como quisermos.
+    Para enviar de filho pro pai, precisamos utilizar o EventEmitter e o @Output.
+    Aqui, recebemos o conteúdo do método com o $event, e atribuimos à variável ts message.
+  </app-component-interaction>
+  
+  <h4>{{message}}</h4>
+
 </div>
