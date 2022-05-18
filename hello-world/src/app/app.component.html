@@ -69,11 +69,17 @@
   </app-pipes>
 </div> -->
 
-<div>
+<!-- <div>
   <app-employee-list></app-employee-list>
 </div>
 
 <div>
   <app-employee-detail></app-employee-detail>
-</div>
+</div> -->
 
+<nav>
+  <a routerLink="/departments" routerLinkActive="active">Departments</a>
+  <a routerLink="/employees" routerLinkActive="active">Employees</a>
+</nav>
+
+<router-outlet></router-outlet>
